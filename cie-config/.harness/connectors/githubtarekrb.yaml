@@ -1,0 +1,23 @@
+connector:
+  name: github-tarekrb
+  identifier: githubtarekrb
+  description:
+  orgIdentifier: Rebai_Tr_Org
+  projectIdentifier: Tarek_rb
+  type: Github
+  spec:
+    url: https://github.com/TAREK199
+    validationRepo: harness-cie-lab
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: github-tarekrb
+          tokenRef: Tarek_github
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: Tarek_github
+    executeOnDelegate: true
+    type: Account
